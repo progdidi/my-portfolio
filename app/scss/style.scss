@@ -2,7 +2,58 @@
 @import 'var';
 @import 'reset';
 
+.header {
+    padding: 30px 0;
+    .header__inner {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 20px;
+    }
+    .logo {
+        display: block;
+        margin-right: auto;
+    }
+    .menu {
+        .menu__list {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .menu__list-item {
+        }
+        .menu__list-link {
+        }
+    }
+    
+    .header__btn {
+        
+    }
+}
+
+
 
 .promo {
     min-height: calc(100vh - 120px);
+    .promo-info__title {
+        font-size: 64px;
+        margin-bottom: 30px;
+    }
+}
+
+
+.works {
+    background-color: var(--second-color);
+    .works__title, .works__descr {
+        color: var(--second-text-color);
+    }
+    .works__items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    .works-item {
+        background-color: var(--dark-main-color);
+        padding: 15px;
+    }
 }
